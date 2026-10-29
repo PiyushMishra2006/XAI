@@ -1,0 +1,26 @@
+{
+  "dataset": "sklearn Breast Cancer Wisconsin Diagnostic",
+  "n_samples": 569,
+  "n_features": 30,
+  "class_mapping": {
+    "0": "Benign",
+    "1": "Malignant"
+  },
+  "test_size": 0.2,
+  "random_state": 42,
+  "device": "cpu",
+  "models": [
+    "LogisticRegression",
+    "RandomForest",
+    "XGBoost",
+    "MLP",
+    "1D-CNN",
+    "Transformer"
+  ],
+  "notes": [
+    "Test set was held out from training and classical cross-validation.",
+    "Classical CV metrics are saved separately in classical_cv_metrics.csv.",
+    "SHAP/LIME explanations are post-hoc and do not establish clinical validity.",
+    "CNN and Transformer treat feature columns as a sequence; this is an experimental inductive bias."
+  ]
+}
